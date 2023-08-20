@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+:root {
+  --bgcolor: #1f242d;
+  --bgcolor2: #323946;
+  --text: #fff;
+  --design: #0ef;
+}
+html {
+  font-size: 63%;
+  overflow-x: hidden;
+}
+body {
+  background-color: var(--bgcolor);
+  color: var(--text);
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background-color: var(--bgcolor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  font-size: 2.5rem;
+  color: var(--text);
+  cursor: default;
+  font-weight: 700;
+}
+.menu a {
+  font-size: 1.5rem;
+  margin-left: 3.5rem;
+  color: var(--text);
+  position: relative;
+}
+.menu a::after {
+  content: "";
+  position: absolute;
+  background-color: var(--design);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.4s;
+}
+.menu a:hover::after {
+  width: 100%;
+}
+.menu a:hover,
+.menu a.active {
+  color: var(--design);
+}
+#menubar {
+  font-size: 3.5rem;
+  color: var(--text);
+  display: none;
+}
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+.home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+.homeimg {
+  box-shadow: inset 0 0 2rem var(--design);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.homeimg:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 2rem var(--design);
+  border-radius: 50%;
+}
+.homecontent h3 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+span {
+  color: var(--design);
+}
+.homecontent h1 {
+  font-size: 5.5rem;
+  font-weight: 700;
+}
+.btn {
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  margin-top: 6vh;
+  margin-left: 25px;
+  background: var(--design);
+  border-radius: 4rem;
+  color: var(--bgcolor2);
+  font-weight: 700;
+}
+.btn:hover {
+  box-shadow: 0 0 2rem var(--design);
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  background-color: var(--bgcolor2);
+}
+.aboutimg {
+  margin-top: -70px;
+}
+.aboutcontent {
+  margin-top: -200px;
+  margin-left: 6rem;
+}
+.lang {
+  font-weight: 600;
+}
+.aboutcontent h1 {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 4rem;
+  line-height: 10rem;
+}
+.aboutcontent h3 {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 3rem;
+}
+.aboutcontent p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  line-height: 2.3rem;
+}
+.project h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7rem;
+  margin-top: 8rem;
+}
+.projects .project1 {
+  flex: 0 0 30rem;
+  background: var(--bgcolor2);
+  padding: 3rem 1rem 1rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 0.2rem solid var(--bgcolor);
+  transition: 0.5s ease;
+}
+.projects .project1:hover {
+  border-color: var(--design);
+  transform: scale(1.02);
+}
+.projects h3 {
+  font-size: 2.6rem;
+}
+.projects p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+.projects .project1 .btn {
+  margin-left: -2px;
+  margin-bottom: 1rem;
+  padding: 1.3rem 1.3rem;
+}
+.contact {
+  background-color: var(--bgcolor2);
+}
+.contactheading {
+  margin-top: -35%;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.contacticons {
+  text-align: center;
+  margin-top: 1rem;
+}
+.contacticons i {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  border: 0.2rem solid var(--design);
+  background: transparent;
+  border-radius: 50%;
+  color: var(--design);
+  margin: 3rem 1.5rem 3rem 0;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.contacticons i:hover {
+  background-color: var(--design);
+  color: var(--bgcolor);
+}
+.copyright {
+  margin-top: 18%;
+  width: 100%;
+  background-color: var(--bgcolor);
+  text-align: center;
+  font-size: 1.5rem;
+}
+#p {
+  font-size: 2rem;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 2rem 3%;
+  }
+  section {
+    padding: 10rem 3% 2rem;
+  }
+  footer {
+    padding: 2rem 3%;
+  }
+  .menu a:hover::after {
+    width: 0;
+  }
+  .homeimg {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #menubar {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bgcolor);
+    border-top: 1rem solid rgba(0, 0, 0, 2);
+    box-shadow: 0.5rem rgba(0, 0, 0, 2);
+    display: none;
+  }
+  .menu.active {
+    display: block;
+  }
+  .menu a {
+    display: block;
+    font-size: 2.5rem;
+    margin: 3rem 0;
+  }
+  .home {
+    flex-direction: column;
+  }
+  .homecontent h3 {
+    font-size: 2.6rem;
+  }
+  .homecontent h1 {
+    font-size: 5rem;
+  }
+  .homeimg img {
+    margin-top: 2rem;
+    width: 40vw;
+    height: 50vh;
+  }
+  .homeimg {
+    box-shadow: none;
+  }
+  .about {
+    flex-direction: column-reverse;
+  }
+  .aboutcontent {
+    margin-top: -50px;
+  }
+  .about img {
+    width: 40vw;
+    height: 50vh;
+    margin-top: 8rem;
+  }
+  .contactheading {
+    margin-top: -370px;
+  }
+  footer {
+    padding: 1rem 1rem;
+  }
+  .copyright {
+    margin-top: 19.8%;
+  }
+}
+@media (max-width: 617px) {
+  .about img {
+    width: 40vw;
+    height: 40vh;
+  }
+  footer {
+    padding: 0.5rem 0.5rem;
+  }
+  .copyright {
+    margin-top: 26%;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .homeimg img {
+    margin-top: 2rem;
+    width: 40vw;
+    height: 40vh;
+  }
+  .aboutcontent {
+    margin-top: -50px;
+    margin-left: -5px;
+  }
+  .about img {
+    width: 40vw;
+    height: 40vh;
+    margin-top: 8rem;
+  }
+  .contactheading {
+    margin-top: -370px;
+  }
+  .copyright {
+    margin-top: 38%;
+  }
+}
+@media (max-width: 365px) {
+  .homeimg img {
+    margin-top: 2rem;
+    width: 45vw;
+    height: 40vh;
+  }
+  .aboutcontent {
+    margin-top: -50px;
+    margin-left: -5px;
+  }
+  .about img {
+    width: 45vw;
+    height: 40vh;
+    margin-top: 8rem;
+  }
+  .contactheading {
+    margin-top: -370px;
+  }
+  .copyright {
+    margin-top: 49%;
+  }
+}

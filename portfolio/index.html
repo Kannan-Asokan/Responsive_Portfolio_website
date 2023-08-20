@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+    <script defer src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+      <i class="bx bx-menu" id="menubar"></i>
+      <nav class="menu">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="home" id="home">
+        <div class="homecontent">
+          <h3>Hello,</h3>
+          <h1>I'm Kannan</h1>
+          <h3>And I'm a <span>Frontend Developer</span></h3>
+          <a href="second.html" class="btn">Download Resume</a>
+        </div>
+        <div class="homeimg">
+          <img
+            src="/images/myprofile.png"
+          "
+            alt="My Profile"
+            height="400px"
+            width="400px"
+          />
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="aboutimg">
+          <img
+            src="/images/Propic1692354055869-modified.png
+          "
+            alt="My Profile"
+            height="400px"
+            width="400px"
+          />
+        </div>
+        <div class="aboutcontent">
+          <h1>About <span>Me</span></h1>
+          <h3>Frontend Developer</h3>
+          <p>
+            As a Frontend Developer,I'm familiar with
+            <span class="lang">HTML,CSS,JAVASCRIPT, and REACT</span>. Throughout
+            my academic journey, I have gained theoretical knowledge in
+            Java,Python,C++,Php,SQL, and Visual Basic.
+          </p>
+        </div>
+      </section>
+      <section class="project" id="projects">
+        <h1 class="projectheading">My <span>Projects</span></h1>
+        <div class="projects">
+          <div class="project1">
+            <h3>Portfolio</h3>
+            <p>Responsive Portfolio Project using html, css, javascript</p>
+            <a href="https://github.com/Kannan-Asokan" class="btn"
+              >&nbsp;&nbsp;Code&nbsp;&nbsp;</a
+            >
+          </div>
+          <div class="project1">
+            <h3>Google Clone</h3>
+            <p>Google Clone Project using html, css, javascript</p>
+            <a href="https://github.com/Kannan-Asokan" class="btn"
+              >&nbsp;&nbsp;Code&nbsp;&nbsp;</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact"></section>
+      <div class="contactheading">
+        <h1 class="heading">Contact <span>Me</span></h1>
+      </div>
+      <div class="contacticons">
+        <i
+          class="bx bxs-envelope"
+          id="email"
+          title="Email"
+          onclick="email()"
+        ></i>
+        <a href="https://www.linkedin.com/in/kannan-a-577501266"
+          ><i class="bx bxl-linkedin-square" id="linkedin" title="Linked-in"></i
+        ></a>
+        <a href="https://github.com/Kannan-Asokan"
+          ><i class="bx bxl-github" id="github" title="Github"></i
+        ></a>
+      </div>
+      <div class="emailshow">
+        <p id="p" style="color: #fff"></p>
+      </div>
+    </main>
+    <footer class="copyright">
+      <div>
+        <p>&copy; Copyright 2023.Kannan</p>
+      </div>
+    </footer>
+  </body>
+</html>
